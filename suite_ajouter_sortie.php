@@ -5,7 +5,7 @@ require_once("header.php");
 <div class="row">
     <div class="col-lg-12">
         <h1 class="page-header">
-            <small>Ajouter Sortie </small>
+            <small>Ajouter sortie </small>
         </h1>
 
     </div>
@@ -21,10 +21,8 @@ $id = $sortie->select_id();
 
 
     <?php
-    if (isset($_POST["xx"])) {
-
-
-
+    if ($_SERVER["REQUEST_METHOD"] == "POST") 
+		{
 
         $id_ch = $_POST['chaufeur'];
         $id_v = $_POST['vehicule'];

@@ -6,14 +6,12 @@ class sortie {
 
     public function ajouter_sortie($date, $heur_s, $heur_r, $direction) {
 
-        $ndate = $date[8] . $date[9] . "/" . $date[5] . $date[6] . "/" . $date[0] . $date[1] . $date[2] . $date[3];
-
-
+        
         $mois = date("m", strtotime($date));
         $annes = date("Y", strtotime($date));
         $jour = date("d", strtotime($date));
         $day = date("l", strtotime($date));
-        $date = $ndate;
+      
         switch ($day) {
             case "Monday":
                 $day = "Lundi";

@@ -12,8 +12,8 @@ require_once("header.php");
     </div>
 </div>
 <br>
-<a href="ajouter_v.php"><img src='img/ajout.png' width='30' height='30'></img> </a>
-<a href="liste_vehicule.php"><img src='img/liste.png' width='30' height='30'></img> </a>
+<a href="ajouter_v.php"><img src='img/ajout.png' width='30' height='30'></a>
+<a href="liste_vehicule.php"><img src='img/liste.png' width='30' height='30'></a>
  
 <br><br>
 <form class="form-horizontal" id="recherche" role="form" method="post">

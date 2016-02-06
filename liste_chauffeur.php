@@ -4,14 +4,14 @@ require_once("header.php");
 <div class="row">
     <div class="col-lg-12">
         <h1 class="page-header">
-            <small>Liste Chauffeur </small>
+            <small>Liste chauffeur </small>
         </h1>
 
     </div>
 </div>
 
 
-<a href="ajouter_ch.php"><img src='img/ajout.png' width='30' height='30'></img> </a>
+<a href="ajouter_ch.php"><img src='img/ajout.png' width='30' height='30'></a>
 <br><br>
 <div id="chercher_s">
     <div class="row">

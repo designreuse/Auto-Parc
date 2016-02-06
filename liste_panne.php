@@ -5,14 +5,14 @@ require_once("header.php");
 <div class="row">
     <div class="col-lg-12">
         <h1 class="page-header">
-            <small>Liste Panne  </small>
+            <small>Liste panne  </small>
         </h1>
 
     </div>
 </div>
 <br>
-<a href="ajouter_panne.php"><img src='img/ajout.png' width='30' height='30'></img> </a>
-<a href="liste_panne.php"><img src='img/liste.png' width='30' height='30'></img> </a>
+<a href="ajouter_panne.php"><img src='img/ajout.png' width='30' height='30'></a>
+<a href="liste_panne.php"><img src='img/liste.png' width='30' height='30'></a>
 <br><br>
 <div id="chercher_s">
 <div class="row">
@@ -71,7 +71,7 @@ $user->affichage();
 <table class="table table-responsive table-bordered" id="liste_s">
     <thead>
         <tr>
-            <th>ID</th><th>Jour</th><th>Date</th><th>Place</th><th>Matricule</th><th>Marque</th><th>Type</th><th>Etat</th><th>Modifier</th><th>Supprimer</th>
+            <th>ID</th><th>Jour</th><th>Date</th><th>Matricule</th><th>Marque</th><th>Type</th><th>Etat</th><th>Modifier</th><th>Supprimer</th>
         </tr>
     </thead>
     <tbody>

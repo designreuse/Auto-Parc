@@ -17,7 +17,6 @@ class panne {
             $matricule = $donnees->matricule;
             $id_v = $donnees->id_v;
             $jour = $donnees->jour;
-            $place = $donnees->place;
             echo "<tr>";
             echo "<td>";
             echo $id_panne;
@@ -27,9 +26,6 @@ class panne {
             echo "</td>";
             echo "<td>";
             echo $date_p;
-            echo "</td>";
-            echo "<td>";
-            echo $place;
             echo "</td>";
             echo "<td>";
             echo $matricule;
@@ -111,14 +107,12 @@ class panne {
     }
 
     public function ajouter_panne($date, $etat, $vehicule) {
-        $ndate = $date[8] . $date[9] . "/" . $date[5] . $date[6] . "/" . $date[0] . $date[1] . $date[2] . $date[3];
-
-
+       
         $mois = date("m", strtotime($date));
         $annes = date("Y", strtotime($date));
         $jour = date("d", strtotime($date));
         $day = date("l", strtotime($date));
-        $date = $ndate;
+       
         switch ($day) {
             case "Monday":
                 $day = "Lundi";
@@ -162,7 +156,7 @@ class panne {
         } catch (Exception $e) {
 
             echo 'Erreur de requète : ', $e->getMessage();
-        }
+        } 
         return true;
     }
 

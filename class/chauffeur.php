@@ -147,7 +147,7 @@ try {
 
 	public function liste_chaufeur_date($date)
 {       $etat = 'disponible';
-	$select = DataBase::connect()->query("select * from chaufeur where chaufeur.disponible like '$etat'"
+	$select = DataBase::connect()->query("select * from chaufeur where chaufeur.archive=0 and chaufeur.disponible like '$etat'"
                 . " and chaufeur.id_ch NOT IN (select id_ch from sortie where id_ch IS NOT NULL and  sortie.date like '$date')");
 		
 		while($donnees = $select->fetch(PDO::FETCH_OBJ))

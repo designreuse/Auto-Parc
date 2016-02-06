@@ -8,7 +8,7 @@ require_once("header.php");
 <div class="row">
     <div class="col-lg-12">
         <h1 class="page-header">
-            <small>Liste Sortie </small>
+            <small>Liste sortie </small>
         </h1>
 
     </div>

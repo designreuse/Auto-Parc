@@ -11,15 +11,13 @@ require_once("header.php");
     </div>
 </div>
 <br>
-	<form class="form-horizontal" role="form" method="post" action="#">
-
-
+	<form class="form-horizontal" role="form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>>
 
  <?php
  
  $matE=$typeE=$ageE=$marqueE="";
  
-	 if (isset($_POST["xx"])) 
+	if ($_SERVER["REQUEST_METHOD"] == "POST") 
 		{
 		
 if( $controle->vide($_POST["mat"])) 

@@ -20,7 +20,8 @@ require_once("header.php");
     <?php
     $dateE = $heur_sE = $heur_rE = $directionE = "";
 
-    if (isset($_POST["xx"])) {
+    if ($_SERVER["REQUEST_METHOD"] == "POST") 
+		{
 
         if ($controle->vide($_POST["date"])) {
             $dateE = " * champ obligatoire";
@@ -71,28 +72,28 @@ document.location.replace("suite_ajouter_sortie.php?message=add");
             <div class="form-group">
                 <label class="control-label" for="typeahead">Date de sortie :  </label>
                 <div class="controls">
-                    <input type="date" name="date" class="form-control" id="typeahead"  >
+                    <input type="text" name="date" class="form-control" id="datepicker"  >
                     <p class="help-block"><?php echo $dateE ?></p>
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label" for="typeahead">Heure de sortie :  </label>
                 <div class="controls">
-                    <input type="time" name="heur_s" class="form-control" id="typeahead"  data-provide="typeahead" data-items="4" >
+                    <input type="time" name="heur_s" class="form-control" id="typeahead"   >
                     <p class="help-block"><?php echo $heur_sE ?></p>
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label" for="typeahead">Heure de retour :  </label>
                 <div class="controls">
-                    <input type="time" name="heur_r" class="form-control" id="typeahead"  data-provide="typeahead" data-items="4" >
+                    <input type="time" name="heur_r" class="form-control" id="typeahead"  >
                     <p class="help-block"><?php echo $heur_rE ?></p>
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label" for="typeahead">Direction :  </label>
                 <div class="controls">
-                    <input type="text" name="direction" class="form-control" id="typeahead"  data-provide="typeahead" data-items="4" >
+                    <input type="text" name="direction" class="form-control" id="typeahead" >
                     <p class="help-block"><?php echo $directionE ?></p>
                 </div>
             </div>
@@ -110,7 +111,11 @@ document.location.replace("suite_ajouter_sortie.php?message=add");
 </div>
 
 
-    
+    <script>
+   $('#datepicker').datepicker();
+    </script>
+
+
 
 <?php
 require_once 'footer.php';

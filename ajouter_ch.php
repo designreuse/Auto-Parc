@@ -20,7 +20,7 @@ require_once("header.php");
  
  $nomE=$prenomE=$emailE=$telE="";
  
-	 if (isset($_POST["xx"])) 
+	if ($_SERVER["REQUEST_METHOD"] == "POST") 
 		{
 		
 if( $controle->vide($_POST["nom"])) 

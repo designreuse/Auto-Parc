@@ -47,9 +47,8 @@ require_once("class/main.php");
                         <h2>Auto-Parc</h2>
                     </center>
                     <br>
-                    <img src="img/parking.png" height="270" width="320">
-                    <h2 class="form-signin-heading">Authentification</h2>
-                </center>
+                    <img src="img/parking.png" height="230" width="240">
+                    </center>
                 <input type="text" class="form-control" name="login" placeholder="Login"  id="email"  />
                 <input type="password" class="form-control" name="pass" placeholder="Mot de passe" id="password" />      
 

@@ -3,7 +3,7 @@ session_name('K1Q');
 session_start();
 if(empty($_SESSION['l'])  ||  empty($_SESSION['SUCe']) || $_SESSION['SUCe']!="xx88xxc1r123yyI;;::!!1a"    )
 {
-	header('location:index.php');
+	header('location:./');
 }
 require_once("class/main.php");
 
